@@ -48,4 +48,3 @@ abstractions from the
 
 * [`LogCompose.jl`](https://github.com/JuliaLogging/LogCompose.jl) provides
   declarative logger configuration and an associated `.toml` file format.
-
