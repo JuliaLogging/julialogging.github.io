@@ -1,50 +1,27 @@
-# JuliaLogging
+# Welcome to JuliaLogging!
 
-This is the landing page of the [JuliaLogging GitHub organization](https://github.com/JuliaLogging/).
-JuliaLogging is an umbrella organization for logging-related packages and repositories
-in the [Julia programming language](https://julialang.org/) ecosystem.
+This is the landing page of the
+[JuliaLogging GitHub organization](https://github.com/JuliaLogging/). JuliaLogging is an
+umbrella organization for logging-related packages and repositories in the
+[Julia programming language](https://julialang.org/) ecosystem.
 
-Here's a summary of libraries which integrate with the standard logging
-frontend macros `@debug`, `@info`, `@warn`, `@error` from `Base` and with the
-abstractions from the
-[`Logging`](https://docs.julialang.org/en/v1/stdlib/Logging) standard library.
+The aim of this document is to be a "one-stop-shop" for everything related to logging in
+Julia. The document is structured as follows[^1]:
 
-### Frontend
+ - _**Tutorials**_ will teach you the basics of Julia's logging system.
+ - _**How-to guides**_ will guide you through the steps involved in adressing common tasks
+   and use-cases. They are more advanced than tutorials and assume some knowledge of Julia's
+   logging system.
+ - _**Reference**_ contains technical reference of functions and APIs (e.g. the docstrings).
+   Use this when looking up details.
+ - _**Background and discussion**_ covers some higher level topics.
 
-* [`ProgressLogging.jl`](https://github.com/JuliaLogging/ProgressLogging.jl)
-  provides some convenient frontend macros including `@progress` which makes it
-  easy to emit log records tracking the progress of looping constructs.
+!!! note
+    Please help improve this documentation -- if something confuses you, chances are you're
+    not alone. It's easy to do as you read along: just click on the "Edit on GitHub" link
+    at the top of each page, and then [edit the files directly in your browser]
+    (https://help.github.com/articles/editing-files-in-another-user-s-repository/).
+    Your changes will be vetted by developers before becoming permanent, so don't
+    worry about whether you might say something wrong.
 
-### Log Event routing and transformation
-
-* [`LoggingExtras.jl`](https://github.com/JuliaLogging/LoggingExtras.jl) provides
-  generic log transformation, filtering and routing functionality. You can use
-  this to mutate messages as they go through the chain, duplicate a stream of
-  log records into multiple streams, discard messages based on a predicate, etc.
-* [`Logging2.jl`](https://github.com/JuliaLogging/Logging2.jl) provides
-  utilities to redirect
-
-### Sinks
-
-* The [`Logging`](https://docs.julialang.org/en/v1/stdlib/Logging) stdlib
-  provides a default logger backend `ConsoleLogger` for basic filtering and
-  pretty printing of log records in the terminal.
-* [`TerminalLoggers.jl`](https://github.com/JuliaLogging/TerminalLoggers.jl) is a
-  library for advanced terminal-based pretty printing of log records, including
-  fancy progress bars and markdown formatting.
-* [`TensorBoardLogger.jl`](https://github.com/PhilipVinc/TensorBoardLogger.jl)
-  can log structured numeric data to
-  [TensorBoard](https://www.tensorflow.org/tensorboard) as a backend.
-* [`LogRoller.jl`](https://github.com/JuliaLogging/LogRoller.jl) has a backend for
-  rotating log files once they hit a size limit.
-* [`Syslogging.jl`](https://github.com/JuliaLogging/SyslogLogging.jl) provides a
-  backend to direct logs to syslog.
-* [`LoggingExtras.jl`](https://github.com/JuliaLogging/LoggingExtras.jl) provides a
-  simple `FileLogger` sink.
-* [LokiLogger](https://github.com/JuliaLogging/LokiLogger.jl) is a log message
-  sink for [Grafana Loki](https://grafana.com/oss/loki/)
-
-### Configuration
-
-* [`LogCompose.jl`](https://github.com/JuliaLogging/LogCompose.jl) provides
-  declarative logger configuration and an associated `.toml` file format.
+[^1]: The organization of the document follows the [Diátaxis Framework](https://diataxis.fr).
