@@ -1,0 +1,13 @@
+/* Larger logo */
+html.theme--documenter-dark #documenter .docs-sidebar .docs-logo > img,
+#documenter .docs-sidebar .docs-logo > img {
+    max-height: 12rem;
+}
+
+
+pre {
+    background: #f9f5d7;
+}
+html.theme--documenter-dark pre {
+    background: #1d2021;
+}
