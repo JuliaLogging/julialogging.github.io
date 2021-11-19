@@ -172,7 +172,9 @@ version = "1.0.0"
 
 [[LokiLogger]]
 deps = ["HTTP", "JSON3", "Logging", "StructTypes", "URIs"]
-git-tree-sha1 = "029367fdb678535cfe1029760ec3d201a09f9977"
+git-tree-sha1 = "d412abc34fad95ca2b7d6db8c932561dc2648377"
+repo-rev = "master"
+repo-url = "https://github.com/JuliaLogging/LokiLogger.jl.git"
 uuid = "51d429d1-9683-4c89-86d7-889f440454ef"
 version = "1.0.0"
 
@@ -191,10 +193,10 @@ deps = ["Artifacts", "Libdl"]
 uuid = "c8ffd9c3-330d-5841-b78e-0817d7145fa1"
 
 [[MiniLoggers]]
-deps = ["Dates", "Logging"]
-git-tree-sha1 = "40ea26f67948907910e9a94a0b55b4b4d3304ce7"
+deps = ["Dates", "Logging", "Markdown"]
+git-tree-sha1 = "fc62e0ea4c194d519201e60ece4f0936028a604d"
 uuid = "93f3dd0f-005d-4452-894a-a31841fa4078"
-version = "0.2.4"
+version = "0.4.1"
 
 [[Mmap]]
 uuid = "a63ad114-7e13-5084-954f-fe012c677804"
