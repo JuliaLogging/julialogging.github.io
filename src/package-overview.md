@@ -155,3 +155,12 @@ The LogCompose package provides declarative logger configuration and an associat
 file format.
 
 See the [LogCompose API reference](@ref LogCompose.jl) for details.
+
+## [MiniLoggers.jl](@id miniloggers-overview)
+
+[![](https://img.shields.io/badge/-code%20repository-blue)](https://github.com/JuliaLogging/MiniLoggers.jl)
+[![](https://img.shields.io/badge/-external%20docs-blue)](https://github.com/JuliaLogging/MiniLoggers.jl/blob/master/README.md)
+
+The MiniLoggers package provides Julia logger with minimal setup and simple yet powerful format of logging strings. It allows to build custom and compact logging, which supports coloring, output to external files, timestamps and many more.
+
+See the [MiniLoggers API reference](@ref MiniLoggers.jl) for details.

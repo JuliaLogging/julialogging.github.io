@@ -192,6 +192,12 @@ version = "1.0.3"
 deps = ["Artifacts", "Libdl"]
 uuid = "c8ffd9c3-330d-5841-b78e-0817d7145fa1"
 
+[[MiniLoggers]]
+deps = ["Dates", "Logging", "Markdown"]
+git-tree-sha1 = "fc62e0ea4c194d519201e60ece4f0936028a604d"
+uuid = "93f3dd0f-005d-4452-894a-a31841fa4078"
+version = "0.4.1"
+
 [[Mmap]]
 uuid = "a63ad114-7e13-5084-954f-fe012c677804"
 

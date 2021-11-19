@@ -1,7 +1,8 @@
 using Documenter
 import NodeJS_16_jll
 import LoggingExtras, LokiLogger, ProgressLogging, TerminalLoggers,
-       SyslogLogging, LogRoller, LogCompose, Logging, Logging2, LoggingFormats
+       SyslogLogging, LogRoller, LogCompose, Logging, Logging2, LoggingFormats,
+       MiniLoggers
 
 # "Backport" of JuliaLang/julia#40979
 @eval Logging begin
@@ -76,6 +77,7 @@ makedocs(
             "reference/progresslogging.md",
             "reference/sysloglogging.md",
             "reference/terminalloggers.md",
+            "reference/miniloggers.md",
         ],
         # "Background and discussion" => [
         # ],
