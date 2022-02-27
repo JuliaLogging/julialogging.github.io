@@ -8,6 +8,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
+        with:
+          ssh-key: ${{ secrets.DOCUMENTER_KEY }}
       - uses: julia-actions/setup-julia@v1
         with:
           version: '1' # Keep in sync with version that builds docs
