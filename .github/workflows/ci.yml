@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - 'master'
+      - 'create-pull-request/patch'
     tags: '*'
   pull_request:
 
