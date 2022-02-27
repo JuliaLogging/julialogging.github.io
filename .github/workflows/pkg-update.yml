@@ -2,6 +2,7 @@ name: Update documentation dependencies
 on:
   schedule:
     - cron: '0 0 * * *' # daily
+  workflow_dispatch:
 jobs:
   update-manifest:
     runs-on: ubuntu-latest
