@@ -34,6 +34,7 @@ jobs:
             ```
             ${{ env.PKG_DIFF }}
             ```
+            A preview of the build will soon be available at <https://julialogging.github.io/previews/package-update/>.
           commit-message: |
             Automatic Pkg.update() with the following changes:
 
