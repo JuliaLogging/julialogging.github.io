@@ -1,3 +1,9 @@
+for (k, v) in ENV
+    if startswith(k, "GITHUB")
+        println("|", k, "| => |", v, "|")
+    end
+end
+exit(0)
 using Documenter
 import NodeJS_16_jll
 import LoggingExtras, LokiLogger, ProgressLogging, TerminalLoggers,
