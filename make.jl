@@ -97,8 +97,25 @@ makedocs(
     ),
 )
 
-deploydocs(
-    versions = nothing,
-    push_preview = true,
-    repo = "github.com/JuliaLogging/julialogging.github.io.git",
-)
+# Hack to deploy preview builds from package auto-update
+# This is necessary since when using the create-pull-request action, the PR is opened
+# by the github-actions user authenticating with the default GITHUB_TOKEN, which also
+# means that regular CI will not be triggered. This is circumvented by using a SSH key
+# with the actions/checkout action when cloning, which means that the resulting commit
+# is pushed with the same SSH key triggering a "push" event build. However, Documenter
+# only builds previews for the "pull_request" event type, so we need to pretend to be
+# a "pull_request" event type by temporarily setting some environment variables.
+env = Dict{String,String}()
+if ENV["GITHUB_EVENT_NAME"] == "push" &&
+   ENV["GITHUB_REF"] == "refs/heads/create-pull-request/package-update"
+    env["GITHUB_EVENT_NAME"] = "pull_request"
+    env["GITHUB_REF"] = "refs/pull/1234/merge"
+end
+
+withenv(env...) do
+    deploydocs(
+        versions = nothing,
+        push_preview = true,
+        repo = "github.com/JuliaLogging/julialogging.github.io.git",
+    )
+end
