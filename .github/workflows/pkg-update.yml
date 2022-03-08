@@ -27,6 +27,7 @@ jobs:
         uses: peter-evans/create-pull-request@v3
         with:
           title: 'Automatic Pkg.update()'
+          branch: 'create-pull-request/package-update'
           author: 'GitHub <noreply@github.com>'
           body: |
             Automatic `Pkg.update()` with the following changes:
