@@ -106,8 +106,8 @@ makedocs(
 # only builds previews for the "pull_request" event type, so we need to pretend to be
 # a "pull_request" event type by temporarily setting some environment variables.
 env = Dict{String,String}()
-if ENV["GITHUB_EVENT_NAME"] == "push" &&
-   ENV["GITHUB_REF"] == "refs/heads/create-pull-request/package-update"
+if get(ENV, "GITHUB_EVENT_NAME", "") == "push" &&
+   get(ENV, "GITHUB_REF", "") == "refs/heads/create-pull-request/package-update"
     env["GITHUB_EVENT_NAME"] = "pull_request"
     env["GITHUB_REF"] = "refs/pull/1234/merge"
 end
