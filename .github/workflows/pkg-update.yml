@@ -12,7 +12,7 @@ jobs:
           ssh-key: ${{ secrets.DOCUMENTER_KEY_NO_BASE64 }}
       - uses: julia-actions/setup-julia@v1
         with:
-          version: '1' # Keep in sync with version that builds docs
+          version: '1.7' # Keep in sync with .github/workflows/ci.yml
       - name: 'Pkg.update'
         run: |
           julia --project=. -e 'using Pkg; Pkg.update()'

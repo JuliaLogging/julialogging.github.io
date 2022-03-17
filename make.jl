@@ -4,26 +4,6 @@ import LoggingExtras, LokiLogger, ProgressLogging, TerminalLoggers,
        SyslogLogging, LogRoller, LogCompose, Logging, Logging2, LoggingFormats,
        MiniLoggers
 
-# "Backport" of JuliaLang/julia#40979
-@eval Logging begin
-    @doc """
-    Alias for `LogLevel(-1000)`.
-    """
-    Debug
-    @doc """
-    Alias for `LogLevel(0)`.
-    """
-    Info
-    @doc """
-    Alias for `LogLevel(1000)`.
-    """
-    Warn
-    @doc """
-    Alias for `LogLevel(2000)`.
-    """
-    Error
-end
-
 # TODO: Upstream this
 @eval LoggingFormats begin
     @doc """
