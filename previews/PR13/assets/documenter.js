@@ -3,10 +3,10 @@ requirejs.config({
   paths: {
     'headroom': 'https://cdnjs.cloudflare.com/ajax/libs/headroom/0.12.0/headroom.min',
     'jqueryui': 'https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min',
-    'katex-auto-render': 'https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.13.11/contrib/auto-render.min',
+    'katex-auto-render': 'https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.13.24/contrib/auto-render.min',
     'jquery': 'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min',
     'headroom-jquery': 'https://cdnjs.cloudflare.com/ajax/libs/headroom/0.12.0/jQuery.headroom.min',
-    'katex': 'https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.13.11/katex.min',
+    'katex': 'https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.13.24/katex.min',
   },
   shim: {
   "katex-auto-render": {
