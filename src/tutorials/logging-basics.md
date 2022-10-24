@@ -1,7 +1,7 @@
 # Logging basics
 
 In this tutorial we will learn the basics of how to emit *log messages* or *log events*.
-We will also learn a bit about what information each message consist of and what happens
+We will also learn a bit about what information each message consists of and what happens
 after the log message is emitted. If you are writing a script or a package this section
 should cover everything you need.
 

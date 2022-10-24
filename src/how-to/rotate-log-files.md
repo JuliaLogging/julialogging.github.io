@@ -11,7 +11,7 @@ for example to keep the individual files below 10MB.
 The [LoggingExtras.jl](@ref) package implements the [`DatetimeRotatingFileLogger`]
 (@ref LoggingExtras.DatetimeRotatingFileLogger) which, as the name suggests, is a logger
 for date/time based log rotation. The frequency of log rotation is determined based
-on the input filename patterin in the form of a dateformat (see documentation for [`Dates.DateFormat`](https://docs.julialang.org/en/v1/stdlib/Dates/#Dates.DateFormat) and
+on the input filename pattern in the form of a dateformat (see documentation for [`Dates.DateFormat`](https://docs.julialang.org/en/v1/stdlib/Dates/#Dates.DateFormat) and
 [`dateformat"..."`](https://docs.julialang.org/en/v1/stdlib/Dates/#Dates.@dateformat_str)).
 
 Let's look at an initial example:
@@ -38,7 +38,7 @@ rm(logdir; recursive=true, force=true) # hide
 ```
 
 This is a logger that will rotate the log file every day, since "day" is the smallest
-datetime unit in the filaname pattern.
+datetime unit in the filename pattern.
 
 !!! note
     Note that all characters in the filename pattern that should not be part of of the
@@ -61,7 +61,7 @@ $ ls logs/
 ---
 
 Let's now improve the logger by adding two features that are commonly used in `logrotate`:
-file compression and file retention policy. Log files are usually quite compressable
+file compression and file retention policy. Log files are usually quite compressible
 and adding compression could save us some space. A file retention policy let us keep log
 files for a fixed number of days, for example 30, and then automatically delete them.
 Support for compression and retention policies are not built-in, but there are external
