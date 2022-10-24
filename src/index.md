@@ -9,7 +9,7 @@ The aim of this document is to be a "one-stop-shop" for everything related to lo
 Julia. The document is structured as follows[^1]:
 
  - _**Tutorials**_ will teach you the basics of Julia's logging system.
- - _**How-to guides**_ will guide you through the steps involved in adressing common tasks
+ - _**How-to guides**_ will guide you through the steps involved in addressing common tasks
    and use-cases. They are more advanced than tutorials and assume some knowledge of Julia's
    logging system.
  - _**Reference**_ contains technical reference of functions and APIs (e.g. the docstrings).
